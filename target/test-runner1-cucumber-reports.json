@@ -1,0 +1,745 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-08-24T17:13:56.086Z",
+        "line": 10,
+        "name": "Search for the user with username “Delphine”.",
+        "description": "",
+        "id": "to-perform-the-validations-for-the-specific-flow;search-for-the-user-with-username-“delphine”.;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3956000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I have API Header with resources \"users\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"users\"",
+                  "offset": 33
+                }
+              ],
+              "location": "com.mobiqity.assignment.stepdefinition.stepdefinition.iHaveAPIHeader(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Verify the status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 23
+                }
+              ],
+              "location": "com.mobiqity.assignment.stepdefinition.stepdefinition.verifyTheStatusCode(int)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 49000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Verify response contains \"Delphine\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Delphine\"",
+                  "offset": 25
+                }
+              ],
+              "location": "com.mobiqity.assignment.stepdefinition.stepdefinition.verifyResponseContainsUsername(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@TestFlow"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-08-24T17:14:00.245Z",
+        "line": 23,
+        "name": "Use the details fetched to make a search for the posts written by the user.",
+        "description": "",
+        "id": "to-perform-the-validations-for-the-specific-flow;use-the-details-fetched-to-make-a-search-for-the-posts-written-by-the-user.;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 278000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I have API Header with resources \"users\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"users\"",
+                  "offset": 33
+                }
+              ],
+              "location": "com.mobiqity.assignment.stepdefinition.stepdefinition.iHaveAPIHeader(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Verify the status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 23
+                }
+              ],
+              "location": "com.mobiqity.assignment.stepdefinition.stepdefinition.verifyTheStatusCode(int)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "Verify response contains \"Delphine\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Delphine\"",
+                  "offset": 25
+                }
+              ],
+              "location": "com.mobiqity.assignment.stepdefinition.stepdefinition.verifyResponseContainsUsername(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 440000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "Use the details fetch the data for \"Delphine\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Delphine\"",
+                  "offset": 35
+                }
+              ],
+              "location": "com.mobiqity.assignment.stepdefinition.stepdefinition.useTheDetailsFetchedToMakeASearchForThePostsWrittenByTheUser(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 245000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "To make a search for the posts written by the user",
+            "match": {
+              "location": "com.mobiqity.assignment.stepdefinition.stepdefinition.toMakeASearchForThePostsWrittenByTheUser()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "Verify the status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 23
+                }
+              ],
+              "location": "com.mobiqity.assignment.stepdefinition.stepdefinition.verifyTheStatusCode(int)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "Verify fields in the response \"userId\",\"id\",\"title\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "userId",
+                  "offset": 31
+                },
+                {
+                  "val": "id",
+                  "offset": 40
+                },
+                {
+                  "val": "title",
+                  "offset": 45
+                }
+              ],
+              "location": "com.mobiqity.assignment.stepdefinition.stepdefinition.verifyFieldsInTheResponse(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@TestFlow"
+          },
+          {
+            "name": "@TestFlow"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-08-24T17:14:01.223Z",
+        "line": 26,
+        "name": "For each post, fetch the comments and validate if the emails in the comment section are in the proper format.",
+        "description": "",
+        "id": "to-perform-the-validations-for-the-specific-flow;for-each-post--fetch-the-comments-and-validate-if-the-emails-in-the-comment-section-are-in-the-proper-format.",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1136000000,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "I have API Header with resources \"comments\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"comments\"",
+                  "offset": 33
+                }
+              ],
+              "location": "com.mobiqity.assignment.stepdefinition.stepdefinition.iHaveAPIHeader(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "Verify the status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 23
+                }
+              ],
+              "location": "com.mobiqity.assignment.stepdefinition.stepdefinition.verifyTheStatusCode(int)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 284000000,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "validate if the emails in the comment section are in the proper format.",
+            "match": {
+              "location": "com.mobiqity.assignment.stepdefinition.stepdefinition.validateIfTheEmailsInTheCommentSectionAreInTheProperFormat()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@TestFlow"
+          },
+          {
+            "name": "@TestFlow"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-08-24T17:14:02.658Z",
+        "line": 32,
+        "name": "Verify the post request",
+        "description": "",
+        "id": "to-perform-the-validations-for-the-specific-flow;verify-the-post-request",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 267000000,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "I have API Header with resources \"posts\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"posts\"",
+                  "offset": 33
+                }
+              ],
+              "location": "com.mobiqity.assignment.stepdefinition.stepdefinition.iHaveAPIHeader(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "Verify the status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 23
+                }
+              ],
+              "location": "com.mobiqity.assignment.stepdefinition.stepdefinition.verifyTheStatusCode(int)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3000000,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "Verify fields in the response \"userId\",\"id\",\"title\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "userId",
+                  "offset": 31
+                },
+                {
+                  "val": "id",
+                  "offset": 40
+                },
+                {
+                  "val": "title",
+                  "offset": 45
+                }
+              ],
+              "location": "com.mobiqity.assignment.stepdefinition.stepdefinition.verifyFieldsInTheResponse(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@TestFlow"
+          },
+          {
+            "name": "@SmokeTesting"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-08-24T17:14:02.938Z",
+        "line": 38,
+        "name": "Verify the post comments requests",
+        "description": "",
+        "id": "to-perform-the-validations-for-the-specific-flow;verify-the-post-comments-requests",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 268000000,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "I have API Header with resources \"comments\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"comments\"",
+                  "offset": 33
+                }
+              ],
+              "location": "com.mobiqity.assignment.stepdefinition.stepdefinition.iHaveAPIHeader(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "Verify the status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 23
+                }
+              ],
+              "location": "com.mobiqity.assignment.stepdefinition.stepdefinition.verifyTheStatusCode(int)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4000000,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "Verify fields in the response \"id\",\"name\",\"email\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "id",
+                  "offset": 31
+                },
+                {
+                  "val": "name",
+                  "offset": 36
+                },
+                {
+                  "val": "email",
+                  "offset": 43
+                }
+              ],
+              "location": "com.mobiqity.assignment.stepdefinition.stepdefinition.verifyFieldsInTheResponse(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@TestFlow"
+          },
+          {
+            "name": "@SmokeTesting"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-08-24T17:14:03.217Z",
+        "line": 44,
+        "name": "Verify the  album requests",
+        "description": "",
+        "id": "to-perform-the-validations-for-the-specific-flow;verify-the--album-requests",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 248000000,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "I have API Header with resources \"albums\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"albums\"",
+                  "offset": 33
+                }
+              ],
+              "location": "com.mobiqity.assignment.stepdefinition.stepdefinition.iHaveAPIHeader(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "Verify the status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 23
+                }
+              ],
+              "location": "com.mobiqity.assignment.stepdefinition.stepdefinition.verifyTheStatusCode(int)"
+            },
+            "keyword": "When "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@TestFlow"
+          },
+          {
+            "name": "@SmokeTesting"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-08-24T17:14:03.471Z",
+        "line": 49,
+        "name": "Verify the  photos requests",
+        "description": "",
+        "id": "to-perform-the-validations-for-the-specific-flow;verify-the--photos-requests",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 324000000,
+              "status": "passed"
+            },
+            "line": 50,
+            "name": "I have API Header with resources \"photos\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"photos\"",
+                  "offset": 33
+                }
+              ],
+              "location": "com.mobiqity.assignment.stepdefinition.stepdefinition.iHaveAPIHeader(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 51,
+            "name": "Verify the status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 23
+                }
+              ],
+              "location": "com.mobiqity.assignment.stepdefinition.stepdefinition.verifyTheStatusCode(int)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 11000000,
+              "status": "passed"
+            },
+            "line": 52,
+            "name": "Verify fields in the response \"id\",\"title\",\"url\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "id",
+                  "offset": 31
+                },
+                {
+                  "val": "title",
+                  "offset": 36
+                },
+                {
+                  "val": "url",
+                  "offset": 44
+                }
+              ],
+              "location": "com.mobiqity.assignment.stepdefinition.stepdefinition.verifyFieldsInTheResponse(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@TestFlow"
+          },
+          {
+            "name": "@SmokeTesting"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-08-24T17:14:03.817Z",
+        "line": 55,
+        "name": "Verify the  todos requests",
+        "description": "",
+        "id": "to-perform-the-validations-for-the-specific-flow;verify-the--todos-requests",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 238000000,
+              "status": "passed"
+            },
+            "line": 56,
+            "name": "I have API Header with resources \"todos\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"todos\"",
+                  "offset": 33
+                }
+              ],
+              "location": "com.mobiqity.assignment.stepdefinition.stepdefinition.iHaveAPIHeader(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 57,
+            "name": "Verify the status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 23
+                }
+              ],
+              "location": "com.mobiqity.assignment.stepdefinition.stepdefinition.verifyTheStatusCode(int)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 58,
+            "name": "Verify fields in the response \"userId\",\"id\",\"title\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "userId",
+                  "offset": 31
+                },
+                {
+                  "val": "id",
+                  "offset": 40
+                },
+                {
+                  "val": "title",
+                  "offset": 45
+                }
+              ],
+              "location": "com.mobiqity.assignment.stepdefinition.stepdefinition.verifyFieldsInTheResponse(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@TestFlow"
+          },
+          {
+            "name": "@SmokeTesting"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-08-24T17:14:04.063Z",
+        "line": 61,
+        "name": "Verify the users requests",
+        "description": "",
+        "id": "to-perform-the-validations-for-the-specific-flow;verify-the-users-requests",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 251000000,
+              "status": "passed"
+            },
+            "line": 62,
+            "name": "I have API Header with resources \"users\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"users\"",
+                  "offset": 33
+                }
+              ],
+              "location": "com.mobiqity.assignment.stepdefinition.stepdefinition.iHaveAPIHeader(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 63,
+            "name": "Verify the status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 23
+                }
+              ],
+              "location": "com.mobiqity.assignment.stepdefinition.stepdefinition.verifyTheStatusCode(int)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 8000000,
+              "status": "passed"
+            },
+            "line": 64,
+            "name": "Verify fields user in the response",
+            "match": {
+              "location": "com.mobiqity.assignment.stepdefinition.stepdefinition.verifyFieldsUserInTheResponse()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@TestFlow"
+          },
+          {
+            "name": "@SmokeTesting"
+          }
+        ]
+      }
+    ],
+    "name": "To perform the validations for the specific flow",
+    "description": "",
+    "id": "to-perform-the-validations-for-the-specific-flow",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/SearchAPI.feature",
+    "tags": [
+      {
+        "name": "@TestFlow",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

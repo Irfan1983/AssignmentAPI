@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="9" time="8.521">
+<testcase classname="To perform the validations for the specific flow" name="Search for the user with username “Delphine”." time="4.133">
+<system-out><![CDATA[Given I have API Header with resources "users"..............................passed
+When Verify the status code 200.............................................passed
+And Verify response contains "Delphine".....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="To perform the validations for the specific flow" name="Use the details fetched to make a search for the posts written by the user." time="0.974">
+<system-out><![CDATA[Given I have API Header with resources "users"..............................passed
+When Verify the status code 200.............................................passed
+And Verify response contains "Delphine".....................................passed
+And Use the details fetch the data for "Delphine"...........................passed
+And To make a search for the posts written by the user......................passed
+And Verify the status code 200..............................................passed
+And Verify fields in the response "userId","id","title".....................passed
+]]></system-out>
+</testcase>
+<testcase classname="To perform the validations for the specific flow" name="For each post, fetch the comments and validate if the emails in the comment section are in the proper format." time="1.424">
+<system-out><![CDATA[Given I have API Header with resources "comments"...........................passed
+When Verify the status code 200.............................................passed
+And validate if the emails in the comment section are in the proper format..passed
+]]></system-out>
+</testcase>
+<testcase classname="To perform the validations for the specific flow" name="Verify the post request" time="0.276">
+<system-out><![CDATA[Given I have API Header with resources "posts"..............................passed
+When Verify the status code 200.............................................passed
+And Verify fields in the response "userId","id","title".....................passed
+]]></system-out>
+</testcase>
+<testcase classname="To perform the validations for the specific flow" name="Verify the post comments requests" time="0.274">
+<system-out><![CDATA[Given I have API Header with resources "comments"...........................passed
+When Verify the status code 200.............................................passed
+And Verify fields in the response "id","name","email".......................passed
+]]></system-out>
+</testcase>
+<testcase classname="To perform the validations for the specific flow" name="Verify the  album requests" time="0.251">
+<system-out><![CDATA[Given I have API Header with resources "albums".............................passed
+When Verify the status code 200.............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="To perform the validations for the specific flow" name="Verify the  photos requests" time="0.34">
+<system-out><![CDATA[Given I have API Header with resources "photos".............................passed
+When Verify the status code 200.............................................passed
+And Verify fields in the response "id","title","url"........................passed
+]]></system-out>
+</testcase>
+<testcase classname="To perform the validations for the specific flow" name="Verify the  todos requests" time="0.242">
+<system-out><![CDATA[Given I have API Header with resources "todos"..............................passed
+When Verify the status code 200.............................................passed
+And Verify fields in the response "userId","id","title".....................passed
+]]></system-out>
+</testcase>
+<testcase classname="To perform the validations for the specific flow" name="Verify the users requests" time="0.261">
+<system-out><![CDATA[Given I have API Header with resources "users"..............................passed
+When Verify the status code 200.............................................passed
+And Verify fields user in the response......................................passed
+]]></system-out>
+</testcase>
+</testsuite>

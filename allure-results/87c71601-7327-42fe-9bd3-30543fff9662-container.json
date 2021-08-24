@@ -1,0 +1,12 @@
+{
+  "uuid": "87c71601-7327-42fe-9bd3-30543fff9662",
+  "name": "Surefire suite",
+  "children": [
+    "cca3aa1c-8b10-4aae-bc92-c4f8bc9a04ea"
+  ],
+  "befores": [],
+  "afters": [],
+  "links": [],
+  "start": 1629742118594,
+  "stop": 1629742119148
+}
